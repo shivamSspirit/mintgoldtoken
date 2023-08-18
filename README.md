@@ -33,27 +33,29 @@ npm install
 npm i -g yarn
 ```
 
-4. Start a local Solana node
+4. set your wallet keypair path in ``anchor.toml`` file
+
+5. Start a local Solana node
 
 ```sh
 solana-test-validator
 ```
 
-5. Build the anchor project
+6. Build the anchor project
 
 ```sh
 anchor build
 ```
 
-6. Fetch the project ID for the build:
+7. Fetch the project ID for the build:
 
 ```sh
 anchor deploy
 ```
 
-6. Update the project ID in the solidity program and anchor.toml file.
+8. Update the project ID in the solidity program and anchor.toml file.
 
-7. Run the tests
+9. Run the tests
 
 ```sh
 anchor test
