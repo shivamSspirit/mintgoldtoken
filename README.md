@@ -53,7 +53,11 @@ anchor build
 anchor deploy
 ```
 
-8. Update the project ID in the solidity program and anchor.toml file.
+8. Update the project ID in the solidity program and anchor.toml file and run command.
+
+```sh
+anchor build
+```
 
 9. Run the tests
 
