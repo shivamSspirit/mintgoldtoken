@@ -3,93 +3,61 @@
 
 ## How to Run this program
 
-**First setup system requirements using this link-> blog link
+**First setup system requirements using this blog post-> [blog_link](https://dev.to/shivamsspirit/minting-fungible-tokens-in-solana-using-solidity-solang-programming-languagepart-2-4lbc)
 
-**Clone this repo**  
+### Prerequisites
 
-``
+1. Node.js - I recommend installing Node using either [nvm](https://github.com/nvm-sh/nvm)
+
+2. Solana Tool Suite - You can see the installation instructions [here](https://docs.solana.com/cli/install-solana-cli-tools).
+
+3. Anchor - Anchor installation was pretty straight-forward for me. You can find the installation instructions [here](https://www.anchor-lang.com/docs/installation).
+
+### To build
+
+1. Clone the repo
+
+```sh
 git clone git@github.com:shivamsoni00/mintgoldtoken.git
-``
+```
 
-go to root directory  
+2. Change into the project directory you'd like to run
 
-``
-cd mintgoldtoken
-``
+3. Install the dependencies
 
-create a file named yarn.lock using this command and install yarn
+```sh
+npm install
+```
 
-``
-touch yarn.lock  
-``  
+```sh
+npm i -g yarn
+```
 
-``
-yarn install
-``
+4. Start a local Solana node
 
-run this command for package files updates 
-
-``
-pnpm install
-``  
-
-create a file named .yarnrc.yml  
-
-``
-touch .yarnrc.yml
-``  
-
-add this line in this file  
-nodeLinker: node-modules  
-
-## For building program  
-
-setup your solana wallet location 
-in anchor.toml file  
-
-after run this command  
-
-``
-anchor build
-``  
-
-open new terminal window and run   
-
-``
+```sh
 solana-test-validator
-``  
+```
 
-now run  
+5. Build the anchor project
 
-``
-anchor deploy
-``  
-
-grab programId and edit it in .sol(solana program file)  
-and anchor.toml file  
-
-then run again  
-
-``
+```sh
 anchor build
-``  
+```
 
-running test  
-check your current wallet address and balance using  
+6. Fetch the project ID for the build:
 
-``
-solana address  
-``
+```sh
+anchor deploy
+```
 
-``
-solana balance
-``
+6. Update the project ID in the solidity program and anchor.toml file.
 
-now run  
+7. Run the tests
 
-``
+```sh
 anchor test
-``
+```
 
 
 
