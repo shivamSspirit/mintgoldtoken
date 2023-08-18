@@ -3,11 +3,11 @@
 
 ## How to Run this program
 
-**First setup system requirements using this blog post-> [blog_link](https://dev.to/shivamsspirit/minting-fungible-tokens-in-solana-using-solidity-solang-programming-languagepart-2-4lbc)
+First setup system requirements using this blog post-> [blog_link](https://dev.to/shivamsspirit/minting-fungible-tokens-in-solana-using-solidity-solang-programming-languagepart-2-4lbc)
 
 ### Prerequisites
 
-1. Node.js - I recommend installing Node using either [nvm](https://github.com/nvm-sh/nvm)
+1. Node.js - I recommend installing Node using either [node]([https://github.com/nvm-sh/nvm](https://nodejs.org/en))
 
 2. Solana Tool Suite - You can see the installation instructions [here](https://docs.solana.com/cli/install-solana-cli-tools).
 
