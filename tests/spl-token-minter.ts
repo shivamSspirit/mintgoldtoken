@@ -5,7 +5,6 @@ import { PublicKey, SystemProgram, SYSVAR_RENT_PUBKEY, LAMPORTS_PER_SOL,ParsedAc
 import { Metaplex } from "@metaplex-foundation/js";
 import { assert } from "chai";
 
-
 import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   getOrCreateAssociatedTokenAccount,
@@ -101,7 +100,7 @@ describe("spl-token-minter", () => {
         wallet.publicKey, // payer
         tokenAccount.address, // associated token account address
         mintKeypair.publicKey, // mint
-        new anchor.BN(156000000000) // amount to mint
+        new anchor.BN(159000000000) // amount to mint
       )
       .accounts({ dataAccount: dataAccount.publicKey })
       .remainingAccounts([
@@ -136,8 +135,6 @@ describe("spl-token-minter", () => {
      console.log("minted token amounts", pops.parsed.info.tokenAmount.amount / LAMPORTS_PER_SOL)
      assert.equal(pops.parsed.info.tokenAmount.amount / LAMPORTS_PER_SOL, 156);
   });
-
-
 
 });
 
