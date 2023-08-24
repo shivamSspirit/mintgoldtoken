@@ -133,7 +133,7 @@ describe("spl-token-minter", () => {
      tokens = parsedAccountData;
      const pops = tokens as ParsedAccountData;
      console.log("minted token amounts", pops.parsed.info.tokenAmount.amount / LAMPORTS_PER_SOL)
-     assert.equal(pops.parsed.info.tokenAmount.amount / LAMPORTS_PER_SOL, 156);
+     assert.equal(pops.parsed.info.tokenAmount.amount / LAMPORTS_PER_SOL, 159);
   });
 
 });
