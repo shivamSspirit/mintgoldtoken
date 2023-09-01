@@ -9,6 +9,7 @@ import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   getOrCreateAssociatedTokenAccount,
   TOKEN_PROGRAM_ID,
+  getAccount
 } from "@solana/spl-token";
 
 describe("spl-token-minter", () => {
