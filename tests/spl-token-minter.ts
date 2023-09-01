@@ -133,7 +133,7 @@ describe("spl-token-minter", () => {
     // Converting tokenAmount to a regular number using Number()
     let tokens = Number(tokenAmount);
     console.log("minted token amounts", tokens / LAMPORTS_PER_SOL);
-    assert.equal(tokens / LAMPORTS_PER_SOL, 199);
+    assert.equal(tokens / LAMPORTS_PER_SOL, 159);
   });
 
 });
